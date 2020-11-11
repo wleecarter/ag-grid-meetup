@@ -53,6 +53,7 @@ export const gridOptions = {
     { field: 'certification' },
     {
       field: 'peakChartPositionUS',
+      type: 'rightAligned',
     },
     { field: 'albumType' },
   ],

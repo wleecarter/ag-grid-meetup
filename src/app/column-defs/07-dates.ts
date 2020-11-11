@@ -56,6 +56,7 @@ export const gridOptions = {
     {
       field: 'peakChartPositionUS',
       filter: 'agNumberColumnFilter',
+      type: 'rightAligned',
     },
     {
       field: 'unitsSold',
