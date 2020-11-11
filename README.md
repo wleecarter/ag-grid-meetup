@@ -20,6 +20,7 @@
 - [Provided Themes](https://www.ag-grid.com/javascript-grid-themes-provided/)
 - [Export to Excel](https://www.ag-grid.com/javascript-grid-excel/) - Enterprise Feature
 - [Grouping](https://www.ag-grid.com/javascript-grid-grouping/) - Enterprise Feature
+- [Sidebar / Tool Panel](https://www.ag-grid.com/javascript-grid-side-bar/) - Enterprise Feature
 
 ### Rush
 
