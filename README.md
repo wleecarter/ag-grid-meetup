@@ -18,6 +18,8 @@
 - [Quick Filter](https://www.ag-grid.com/javascript-grid-filter-quick/)
 - [Grid Size](https://www.ag-grid.com/javascript-grid-width-and-height/)
 - [Provided Themes](https://www.ag-grid.com/javascript-grid-themes-provided/)
+- [Export to Excel](https://www.ag-grid.com/javascript-grid-excel/) - Enterprise Feature
+- [Grouping](https://www.ag-grid.com/javascript-grid-grouping/) - Enterprise Feature
 
 ### Rush
 
