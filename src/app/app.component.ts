@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { gridOptions } from './column-defs/07-dates';
+import { gridOptions } from './column-defs/05-getter-formatter-renderer';
 
 /*
 import { gridOptions } from './column-defs/05-getter-formatter-renderer';
