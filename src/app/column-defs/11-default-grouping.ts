@@ -65,6 +65,7 @@ export const gridOptions = {
     {
       field: 'certification',
       rowGroupIndex: 0,
+      hide: true,
     },
     {
       field: 'albumType',
