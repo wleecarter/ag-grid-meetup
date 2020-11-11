@@ -3,14 +3,8 @@ import { FormControl } from '@angular/forms';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
-import { gridOptions } from './column-defs/05-getter-formatter-renderer';
-
-/*
-import { gridOptions } from './column-defs/05-getter-formatter-renderer';
-import { gridOptions } from './column-defs/06-column-filters';
-import { gridOptions } from './column-defs/07-dates';
 import { gridOptions } from './column-defs/08-quick-filter';
-*/
+
 @UntilDestroy()
 @Component({
   selector: 'app-root',
