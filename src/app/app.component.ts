@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { ExcelExportParams, ProcessRowGroupForExportParams } from 'ag-grid-community';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
-import { gridOptions } from './column-defs/05-getter-formatter-renderer';
+import { gridOptions } from './column-defs/09-export-to-excel';
 
 /*
-import { gridOptions } from './column-defs/05-getter-formatter-renderer';
-import { gridOptions } from './column-defs/06-column-filters';
-import { gridOptions } from './column-defs/07-dates';
-import { gridOptions } from './column-defs/08-quick-filter';
-*/
+import { gridOptions } from './column-defs/09-export-to-excel';
+ */
 @UntilDestroy()
 @Component({
   selector: 'app-root',
@@ -30,6 +28,17 @@ export class AppComponent {
       this.gridColumnApi = params.columnApi;
       this.initializeFilterControlSubscription();
     }
+  }
+
+  public export(): void {
+    const params: ExcelExportParams = {
+      fileName: 'rush-albums.xlsx',
+      sheetName: 'albums',
+      columnKeys: this.gridColumnApi.getAllDisplayedColumns(),
+      processRowGroupCallback: (callBackParams: ProcessRowGroupForExportParams) =>
+        callBackParams.node.key,
+    };
+    this.gridApi.exportDataAsExcel(params);
   }
 
   private initializeFilterControlSubscription(): void {

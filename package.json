@@ -31,6 +31,7 @@
   },
   "private": true,
   "dependencies": {
+    "@ag-grid-enterprise/all-modules": "^24.1.0",
     "@angular/animations": "~10.2.0",
     "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.2.0",
@@ -44,6 +45,7 @@
     "@ngneat/until-destroy": "^8.0.3",
     "ag-grid-angular": "^24.1.0",
     "ag-grid-community": "^24.1.0",
+    "ag-grid-enterprise": "^24.1.0",
     "moment": "^2.29.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
