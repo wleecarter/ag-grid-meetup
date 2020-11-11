@@ -77,11 +77,11 @@ export const gridOptions = {
     },
     {
       field: 'unitsSold',
-      valueGetter: (params) => {
+      valueFormatter: (params) => {
         if (!params.data) {
           return '';
         }
-        return formatNumber(params.data.unitsSold, 'en-US', '1.0');
+        return formatNumber(params.value, 'en-US', '1.0');
       },
       type: 'rightAligned',
       filter: 'agNumberColumnFilter',

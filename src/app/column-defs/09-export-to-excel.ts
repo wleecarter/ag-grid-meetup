@@ -62,17 +62,13 @@ export const gridOptions = {
     {
       field: 'unitsSold',
       valueFormatter: (params) => {
+        if (!params.data) {
+          return '';
+        }
         return formatNumber(params.value, 'en-US', '1.0');
       },
-      // valueGetter correctly formats for export
-      // valueGetter: (params) => {
-      //   if (!params.data) {
-      //     return '';
-      //   }
-      //   return formatNumber(params.data.unitsSold, 'en-US', '1.0');
-      // },
-      type: 'rightAligned',
       filter: 'agNumberColumnFilter',
+      type: 'rightAligned',
     },
   ],
 };
