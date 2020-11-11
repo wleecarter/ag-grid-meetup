@@ -6,7 +6,7 @@ import { columnDefs } from './column-defs/01-column-defs';
 /*
 import { columnDefs } from './column-defs/01-column-defs';
 import { columnDefs } from './column-defs/02-sort-filter-flex';
-import { columnDefs } from './column-defs/03-default-column-def';
+import { columnDefs, defaultColDef } from './column-defs/03-default-column-def';
 import { gridOptions } from './column-defs/04-grid-options';
 */
 
