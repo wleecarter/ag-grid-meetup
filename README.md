@@ -1,7 +1,5 @@
 # ag-Grid Meetup
 
-## To Get Started
-
 - `npm install`
 - `npm start`
 
