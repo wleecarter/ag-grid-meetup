@@ -1,27 +1,28 @@
-# AgGridMeetup
+# ag-Grid Meetup
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## To Get Started
 
-## Development server
+- `npm install`
+- `npm start`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Reference
 
-## Code scaffolding
+### agGrid
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular Grid | Get Started with ag-Grid and Angular](https://www.ag-grid.com/angular-grid/)
+- [Column Definitions](https://www.ag-grid.com/javascript-grid-column-definitions/)
+- [Value Getters](https://www.ag-grid.com/javascript-grid-value-getters/)
+- [Value Formatters](https://www.ag-grid.com/javascript-grid-value-formatters/)
+- [Cell Rendering](https://www.ag-grid.com/javascript-grid-cell-rendering/)
+- [Cell Content](https://www.ag-grid.com/javascript-grid-rendering-flow/)
+- [Formatting, Sorting & Filtering Dates in ag-Grid](https://blog.ag-grid.com/valueformatters-part-2/)
+- [Adding HTML To ag-Grid Column Headers and Cells](https://blog.ag-grid.com/adding-hyperlinks-to-the-grid/)
+- [Quick Filter](https://www.ag-grid.com/javascript-grid-filter-quick/)
+- [Grid Size](https://www.ag-grid.com/javascript-grid-width-and-height/)
+- [Provided Themes](https://www.ag-grid.com/javascript-grid-themes-provided/)
 
-## Build
+### Rush
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Official Site](https://rush.com)
+- [Rush Discography - Wikipedia](https://en.wikipedia.org/wiki/Rush_discography)
+- [Rush Ipsum](https://rushipsum.herokuapp.com)
