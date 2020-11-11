@@ -13,8 +13,8 @@ export const gridOptions = {
     { field: 'releaseDate' },
     { field: 'recordLabel' },
     { field: 'certification' },
-    { field: 'peakChartPositionUS' },
     { field: 'albumType' },
+    { field: 'peakChartPositionUS' },
     { field: 'unitsSold' },
   ],
 };
