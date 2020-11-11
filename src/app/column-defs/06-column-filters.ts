@@ -22,8 +22,11 @@ export const gridOptions = {
       headerName: 'Album',
       field: 'title',
       cellRenderer: (params) => {
-        if (!params.data.url || !params.data.title) {
-          return;
+        if (!params.data) {
+          return '';
+        }
+        if (!params.data.url) {
+          return params.data.title;
         }
         return `<a href="${params.data.url}" target="_blank">${params.data.title}</a>`;
       },
