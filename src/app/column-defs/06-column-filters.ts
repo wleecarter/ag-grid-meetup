@@ -43,11 +43,11 @@ export const gridOptions = {
       field: 'certification',
     },
     {
-      field: 'peakChartPositionUS',
-      filter: 'agNumberColumnFilter',
+      field: 'albumType',
     },
     {
-      field: 'albumType',
+      field: 'peakChartPositionUS',
+      filter: 'agNumberColumnFilter',
     },
     {
       field: 'unitsSold',
