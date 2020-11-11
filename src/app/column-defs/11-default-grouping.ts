@@ -5,6 +5,19 @@ import { convertToMilliseconds, dateComparator } from '../utils';
 
 export const gridOptions = {
   rowData: albumData,
+  groupDefaultExpanded: 1,
+  rowGroupPanelShow: 'always',
+  suppressCellSelection: true,
+  animateRows: true,
+  groupHideOpenParents: false,
+  autoGroupColumnDef: {
+    headerName: '',
+    cellRenderer: 'agGroupCellRenderer',
+    cellRendererParams: {
+      innerRenderer: (params) => params?.value ?? '',
+    },
+    resizable: true,
+  },
   defaultColDef: {
     flex: 1,
     sortable: true,
@@ -46,13 +59,16 @@ export const gridOptions = {
     {
       headerName: 'Label',
       field: 'recordLabel',
+      enableRowGroup: true,
       getQuickFilterText: () => '',
     },
     {
       field: 'certification',
+      rowGroupIndex: 0,
     },
     {
       field: 'albumType',
+      enableRowGroup: true,
     },
     {
       field: 'peakChartPositionUS',
@@ -61,18 +77,31 @@ export const gridOptions = {
     },
     {
       field: 'unitsSold',
-      valueFormatter: (params) => {
-        return formatNumber(params.value, 'en-US', '1.0');
+      valueGetter: (params) => {
+        if (!params.data) {
+          return '';
+        }
+        return formatNumber(params.data.unitsSold, 'en-US', '1.0');
       },
-      // valueGetter correctly formats for export
-      // valueGetter: (params) => {
-      //   if (!params.data) {
-      //     return '';
-      //   }
-      //   return formatNumber(params.data.unitsSold, 'en-US', '1.0');
-      // },
       type: 'rightAligned',
       filter: 'agNumberColumnFilter',
     },
   ],
+  sideBar: {
+    position: 'left',
+    toolPanels: [
+      {
+        id: 'columns',
+        labelDefault: 'Columns',
+        labelKey: 'columns',
+        iconKey: 'columns',
+        toolPanel: 'agColumnsToolPanel',
+        toolPanelParams: {
+          suppressRowGroups: true,
+          suppressValues: true,
+          suppressPivotMode: true,
+        },
+      },
+    ],
+  },
 };

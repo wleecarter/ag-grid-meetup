@@ -4,10 +4,12 @@ import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { ExcelExportParams, ProcessRowGroupForExportParams } from 'ag-grid-community';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
-import { gridOptions } from './column-defs/09-export-to-excel';
+import { gridOptions } from './column-defs/11-default-grouping';
 
 /*
 import { gridOptions } from './column-defs/09-export-to-excel';
+import { gridOptions } from './column-defs/10-grouping';
+import { gridOptions } from './column-defs/11-default-grouping';
  */
 @UntilDestroy()
 @Component({
