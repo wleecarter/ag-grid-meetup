@@ -9,8 +9,8 @@
 
 - [Angular Grid | Get Started with ag-Grid and Angular](https://www.ag-grid.com/angular-grid/)
 - [Column Definitions](https://www.ag-grid.com/javascript-grid-column-definitions/)
-- [Value Getters](https://www.ag-grid.com/javascript-grid-value-getters/)
 - [Value Formatters](https://www.ag-grid.com/javascript-grid-value-formatters/)
+- [Value Getters](https://www.ag-grid.com/javascript-grid-value-getters/)
 - [Cell Rendering](https://www.ag-grid.com/javascript-grid-cell-rendering/)
 - [Cell Content](https://www.ag-grid.com/javascript-grid-rendering-flow/)
 - [Formatting, Sorting & Filtering Dates in ag-Grid](https://blog.ag-grid.com/valueformatters-part-2/)

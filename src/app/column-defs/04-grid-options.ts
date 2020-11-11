@@ -6,6 +6,9 @@ export const gridOptions = {
     flex: 1,
     sortable: true,
     filter: true,
+    filterParams: {
+      suppressAndOrCondition: true,
+    },
   },
   columnDefs: [
     { field: 'title' },

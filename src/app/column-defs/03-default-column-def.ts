@@ -13,4 +13,7 @@ export const defaultColDef = {
   flex: 1,
   sortable: true,
   filter: true,
+  filterParams: {
+    suppressAndOrCondition: true,
+  },
 };
